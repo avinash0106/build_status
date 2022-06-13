@@ -3,9 +3,9 @@
 import com.opencsv.CSVReader
 import com.opencsv.CSVWriter
 
-
-try (CSVReader reader 
-        = new CSVReader(new FileReader("Sample.csv")))
+node {
+  try {
+  (CSVReader reader = new CSVReader(new FileReader("Sample.csv")))
 {
   String [] nextLine;
 
@@ -30,4 +30,5 @@ function getBuildState(){
 }
 catch (IOException | CsvValidationException e) {
   e.printStackTrace();
+}
 }
