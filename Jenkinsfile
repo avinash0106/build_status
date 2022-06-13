@@ -4,7 +4,7 @@ import com.opencsv.CSVReader
 import com.opencsv.CSVWriter
 
 
-try(CSVReader reader 
+try (CSVReader reader 
         = new CSVReader(new FileReader("Sample.csv")))
 {
   String [] nextLine;
