@@ -5,7 +5,7 @@ import com.opencsv.CSVWriter
 
 node {
   try {
-  (CSVReader reader = new CSVReader(new FileReader("Sample.csv")))
+  if (CSVReader reader = new CSVReader(new FileReader("sample.csv")))
 {
   String [] nextLine;
 
